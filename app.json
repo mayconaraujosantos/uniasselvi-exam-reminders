@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "expo-uniasselvi-academic",
+    "slug": "expo-uniasselvi-academic",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
