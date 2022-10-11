@@ -5,6 +5,9 @@
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
-    ]
-  }
+    ],
+    "sdkVersion": "46.0.0",
+    "entryPoint": ".vscode/exponentIndex.js"
+  },
+  "name": "expo-uniasselvi-academic"
 }
