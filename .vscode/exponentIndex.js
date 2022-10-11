@@ -4,7 +4,7 @@ var React = require('/Volumes/BackupMaycon/github-repositories/expo-uniasselvi-a
 var { Component } = React;
 var ReactNative = require('/Volumes/BackupMaycon/github-repositories/expo-uniasselvi-academic/node_modules/react-native');
 var { AppRegistry } = ReactNative;
-AppRegistry.registerRunnable('main', function(appParameters) {
-    AppRegistry.runApplication('expo-uniasselvi-academic', appParameters);
+AppRegistry.registerRunnable('main', function (appParameters) {
+  AppRegistry.runApplication('expo-uniasselvi-academic', appParameters);
 });
 require('/Volumes/BackupMaycon/github-repositories/expo-uniasselvi-academic/index.js');
