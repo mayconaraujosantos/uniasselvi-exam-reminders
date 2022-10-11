@@ -1,5 +1,8 @@
-node_modules
-android
-ios
 logs
 coverage 
+
+node_modules
+dist
+.expo
+.expo-shared
+web-build

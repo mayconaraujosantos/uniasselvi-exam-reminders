@@ -10,7 +10,8 @@
     "lint": "eslint --ext .js --ext ./src",
     "lint:fix": "eslint --fix --ext .js --ext .js ./",
     "format": "prettier --check ./src",
-    "write": "prettier --write ./src"
+    "write": "prettier --write ./src",
+    "prepare": "husky install"
   },
   "dependencies": {
     "expo": "~46.0.13",
@@ -24,12 +25,26 @@
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
+    "commitlint": "^17.1.2",
     "eslint": "^8.25.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.31.10",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.0.3",
     "prettier": "^2.7.1"
   },
-  "private": true
+  "private": true,
+  "lint-staged": {
+    "*.{json,js,jsx,ts,tsx,css,scss,md}": "prettier --config .prettierrc --write",
+    "*.{ts,tsx,js,jsx,json}": "eslint --cache --max-warnings 0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
 }
